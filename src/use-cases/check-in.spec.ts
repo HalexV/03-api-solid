@@ -60,6 +60,8 @@ describe('Check-in Use Case', () => {
       userLongitude: -63.2923053,
     })
 
+    console.dir(promise, { depth: null })
+
     await expect(promise).rejects.toBeInstanceOf(MaxNumberOfCheckInsError)
   })
 
