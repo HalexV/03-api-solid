@@ -24,6 +24,8 @@ export class InMemoryCheckInsRepository implements CheckInsRepository {
       const isOnSameDate =
         checkInDate.isAfter(startOfTheDay) && checkInDate.isBefore(endOfTheDay)
 
+      console.log('checkInDate', checkInDate)
+
       console.log(
         'checkInDate.isAfter(startOfTheDay)',
         checkInDate.isAfter(startOfTheDay),
