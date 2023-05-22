@@ -56,6 +56,8 @@ export class CheckInUseCase {
       new Date(),
     )
 
+    console.log('checkInOnSameDay', checkInOnSameDay)
+
     if (checkInOnSameDay) {
       throw new MaxNumberOfCheckInsError()
     }
