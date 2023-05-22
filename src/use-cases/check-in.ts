@@ -49,6 +49,8 @@ export class CheckInUseCase {
       throw new MaxDistanceError()
     }
 
+    console.log('new DATE', new Date())
+
     const checkInOnSameDay = await this.checkInsRepository.findByUserIdOnDate(
       userId,
       new Date(),
